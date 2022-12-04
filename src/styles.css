@@ -142,11 +142,33 @@ input {
   border-style: groove;
 }
 
+.register-text {
+  text-align: center;
+}
+
 .register-title {
   display: flex;
   justify-content: center;
 }
 /* rgistration form style ends */
+
+/* style login icon */
+.jss1 {
+  display: flex;
+  margin-top: 64px;
+  align-items: center;
+  flex-direction: column;
+}
+.jss2 {
+  background-color: #f50057;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 100%;
+    padding: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
 
 footer {
   margin-top: 10px;
