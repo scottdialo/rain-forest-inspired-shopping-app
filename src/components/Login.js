@@ -22,7 +22,9 @@ export default function Login() {
         });
       })
       .catch((err) => {
+        // eslint-disable-next-line
         const errorCode = err.code;
+        // eslint-disable-next-line
         const errorMessage = err.message;
       });
   };

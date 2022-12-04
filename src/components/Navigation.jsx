@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
 import { auth } from "../firebase-config";
 import { signOut } from "firebase/auth";
 import About from "./About";
@@ -12,6 +12,7 @@ import Shop from "./Shop";
 import SinglepageProduct from "./SinglepageProduct";
 
 //logout function
+// eslint-disable-next-line
 const logout = async () => {
   await signOut(auth);
 };

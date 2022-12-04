@@ -1,8 +1,8 @@
-import { auth } from "../firebase-config";
 import { useLocation } from "react-router-dom";
 import React from "react";
 
 function MyOrders() {
+  // eslint-disable-next-line
   const { state } = useLocation();
 
   return (

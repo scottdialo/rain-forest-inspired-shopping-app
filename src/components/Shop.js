@@ -1,14 +1,16 @@
-import { useState, useEffect, useContext } from "react";
-import { auth } from "../firebase-config";
+
+import { useState, useEffect } from "react";
 import Axios from "axios";
 import { Link } from "react-router-dom";
 
 export default function Shop() {
   const [products, setProducts] = useState([]);
   const [quantity, setQuantity] = useState(1);
+  // eslint-disable-next-line
   const [loggedInUser, setloggedInUser] = useState({});
 
   //add to cart function
+  // eslint-disable-next-line
   const addToCart = () => {
     setQuantity(quantity + 1);
     console.log(quantity);

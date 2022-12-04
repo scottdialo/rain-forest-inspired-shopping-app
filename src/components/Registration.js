@@ -12,6 +12,7 @@ export default function Registration() {
   const [registerCity, setRegisterCity] = useState("");
   const [registerState, setRegisterState] = useState("");
   const [registerPhone, setRegisterPhone] = useState("");
+  // eslint-disable-next-line
   const [loggedInUser, setloggedInUser] = useState({});
 
   onAuthStateChanged(auth, (currentUser) => {
