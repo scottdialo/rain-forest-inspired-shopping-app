@@ -3,13 +3,13 @@
 function Footer() {
   return (
     <footer>
-      <div class="footer-left">
+      <div className="footer-left">
         <small>&copy; 2022 All rights reserved.</small>
       </div>
-      <div class="footer-center">
+      <div className="footer-center">
         <small>Built with ❤️ from California</small>
       </div>
-      <div class="footer-right">
+      <div className="footer-right">
         <img src="./instagram.png" alt="instagram-icon" />
         <img src="./facebook.png" alt="facebook-icon" />
       </div>

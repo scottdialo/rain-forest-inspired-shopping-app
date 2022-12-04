@@ -18,20 +18,20 @@ const logout = async () => {
 
 function Navigation() {
   return (
-    <div class="container">
-      <div class="top-navigation">
-        <div class="top-navigation-left">
+    <div className="container">
+      <div className="top-navigation">
+        <div className="top-navigation-left">
           <Link to="/">
             <img className="logo" src="./smokey-logo.png" alt="shop-app-logo" />
           </Link>
-          <div class="top-navigation-links">
+          <div className="top-navigation-links">
             <Link to="/shop">Shop</Link>
             <Link to="/orders">My Orders</Link>
             <Link to="/careers">Careers</Link>
             <Link to="/about">About</Link>
           </div>
         </div>
-        <div class="top-navigation-right">
+        <div className="top-navigation-right">
           {/* <Link to="/login" onClick={logout}>
             Logout
           </Link> */}

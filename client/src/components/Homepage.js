@@ -9,8 +9,8 @@ export default function Homepage() {
         wildlife...
       </h4>
       <div className="container">
-        <div class="landingpage-body">
-          <div class="landingpage-body-left">
+        <div className="landingpage-body">
+          <div className="landingpage-body-left">
             <h1>
               Buy <br />
               Ethically sourced products
@@ -21,7 +21,7 @@ export default function Homepage() {
             </Link>
           </div>
 
-          <div class="landingpage-body-right">
+          <div className="landingpage-body-right">
             <img
               className="landing-page-img-right"
               src="./nature2.jpg"
