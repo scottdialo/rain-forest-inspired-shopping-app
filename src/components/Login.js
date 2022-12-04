@@ -32,11 +32,11 @@ export default function Login() {
   return (
     <div>
       <div
-        class="jss1 MuiAvatar-root MuiAvatar-circle jss2 "
+        className="jss1 MuiAvatar-root MuiAvatar-circle jss2 "
         style={{ fill: "white" }}
       >
         <svg
-          class="MuiSvgIcon-root"
+          className="MuiSvgIcon-root"
           focusable="false"
           viewBox="0 0 24 24"
           aria-hidden="true"
