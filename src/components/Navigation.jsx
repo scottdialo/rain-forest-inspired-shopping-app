@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { BrowserRouter as Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { auth } from "../firebase-config";
 import { signOut } from "firebase/auth";
 import About from "./About";
@@ -50,16 +50,16 @@ function Navigation() {
         </div>
       </div>
       <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/shop/:id" element={<SinglepageProduct />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/orders" element={<MyOrders />} />
-        <Route path="/careers" element={<Careers />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/logout" element={<Shop />} />
-        <Route path="/registration" element={<Registration />} />
-      </Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/shop/:id" element={<SinglepageProduct />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/orders" element={<MyOrders />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/logout" element={<Shop />} />
+          <Route path="/registration" element={<Registration />} />
+        </Routes>
     </div>
   );
 }
