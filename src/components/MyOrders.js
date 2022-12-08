@@ -1,10 +1,7 @@
-import { auth } from "../firebase-config";
-import { useLocation } from "react-router-dom";
+// import { auth } from "../firebase-config";
 import React from "react";
 
 function MyOrders() {
-  const { state } = useLocation();
-
   return (
     <div>
       {/* <p style={{textAlign:"center"}}> You are logged in as: {auth.currentUser.email}</p> */}

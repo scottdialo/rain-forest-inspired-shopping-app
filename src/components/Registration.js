@@ -1,7 +1,6 @@
 import { useState } from "react";
 import {
   createUserWithEmailAndPassword,
-  onAuthStateChanged,
 } from "firebase/auth";
 import { auth } from "../firebase-config";
 import { useNavigate } from "react-router-dom";
@@ -12,11 +11,11 @@ export default function Registration() {
   const [registerCity, setRegisterCity] = useState("");
   const [registerState, setRegisterState] = useState("");
   const [registerPhone, setRegisterPhone] = useState("");
-  const [loggedInUser, setloggedInUser] = useState({});
+  // const [loggedInUser, setloggedInUser] = useState({});
 
-  onAuthStateChanged(auth, (currentUser) => {
-    setloggedInUser(currentUser);
-  });
+  // onAuthStateChanged(auth, (currentUser) => {
+    // setloggedInUser(currentUser);
+  // });
 
   const navigate = useNavigate();
 

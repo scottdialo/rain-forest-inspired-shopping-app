@@ -1,19 +1,11 @@
-import { useState, useEffect, useContext } from "react";
-import { auth } from "../firebase-config";
+import { useState, useEffect } from "react";
+// import { auth } from "../firebase-config";
 import Axios from "axios";
 import { Link } from "react-router-dom";
 
 export default function Shop() {
   const [products, setProducts] = useState([]);
-  const [quantity, setQuantity] = useState(1);
-  const [loggedInUser, setloggedInUser] = useState({});
-
-  //add to cart function
-  const addToCart = () => {
-    setQuantity(quantity + 1);
-    console.log(quantity);
-    document.getElementById("cart").innerHTML = quantity;
-  };
+  // const [loggedInUser, setloggedInUser] = useState({});
 
   const url = "https://fakestoreapi.com/products";
   useEffect(() => {

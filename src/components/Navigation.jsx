@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { auth } from "../firebase-config";
-import { signOut } from "firebase/auth";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
+// import { auth } from "../firebase-config";
+// import { signOut } from "firebase/auth";
 import About from "./About";
 import Careers from "./Careers";
 import Login from "./Login";
@@ -12,9 +12,9 @@ import Shop from "./Shop";
 import SinglepageProduct from "./SinglepageProduct";
 
 //logout function
-const logout = async () => {
-  await signOut(auth);
-};
+// const logout = async () => {
+//   await signOut(auth);
+// };
 
 function Navigation() {
   return (
