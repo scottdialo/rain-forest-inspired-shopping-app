@@ -1,4 +1,5 @@
-// import "../assets";
+import facebook from "./assets/images/facebook.png";
+import instagram from "./assets/images/instagram.png";
 
 function Footer() {
   return (
@@ -10,8 +11,8 @@ function Footer() {
         <small>Built with ❤️ from California</small>
       </div>
       <div className="footer-right">
-        <img src="./instagram.png" alt="instagram-icon" />
-        <img src="./facebook.png" alt="facebook-icon" />
+        <img src={instagram} alt="instagram-icon" />
+        <img src={facebook} alt="facebook-icon" />
       </div>
     </footer>
   );

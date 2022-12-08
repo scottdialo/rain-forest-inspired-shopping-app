@@ -19,7 +19,7 @@ export default function Shop() {
       <div className="row">
         {products.map((product) => {
           return (
-            <div key={product.id} class="col-md-4 mt-2">
+            <div key={product.id} className="col-md-4 mt-2">
               <Link
                 to={`${product.title}`}
                 state={{
@@ -30,12 +30,12 @@ export default function Shop() {
                   price: product.price,
                 }}
               >
-                <div class="card h-100">
-                  <div class="card-body">
-                    <div class="card-img-actions">
+                <div className="card h-100">
+                  <div className="card-body">
+                    <div className="card-img-actions">
                       <img
                         src={product.image}
-                        class="card-img img-fluid"
+                        className="card-img img-fluid"
                         width="96"
                         height="350"
                         alt=""
@@ -43,26 +43,28 @@ export default function Shop() {
                     </div>
                   </div>
 
-                  <div class="card-body bg-light text-center">
-                    <div class="mb-2">
-                      <h6 class="font-weight-semibold mb-2">
-                        <Link to="#" class="text-default mb-2" data-abc="true">
+                  <div className="card-body bg-light text-center">
+                    <div className="mb-2">
+                      <h6 className="font-weight-semibold mb-2">
+                        <p className="text-default mb-2" data-abc="true">
                           {product.title}
-                        </Link>
+                        </p>
                       </h6>
 
-                      <Link to="#" class="text-muted" data-abc="true">
+                      <p className="text-muted" data-abc="true">
                         {product.category}{" "}
-                      </Link>
+                      </p>
                     </div>
 
-                    <h3 class="mb-0 font-weight-semibold">${product.price}</h3>
+                    <h3 className="mb-0 font-weight-semibold">
+                      ${product.price}
+                    </h3>
 
                     <div>
-                      <i class="fa fa-star star"></i>
-                      <i class="fa fa-star star"></i>
-                      <i class="fa fa-star star"></i>
-                      <i class="fa fa-star star"></i>
+                      <i className="fa fa-star star"></i>
+                      <i className="fa fa-star star"></i>
+                      <i className="fa fa-star star"></i>
+                      <i className="fa fa-star star"></i>
                     </div>
                   </div>
                 </div>

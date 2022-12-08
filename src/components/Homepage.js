@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import nature  from "./assets/images/nature2.jpg"
+
 
 export default function Homepage() {
   return (
@@ -24,7 +26,7 @@ export default function Homepage() {
           <div className="landingpage-body-right">
             <img
               className="landing-page-img-right"
-              src="./nature2.jpg"
+              src={nature}
               alt="waterfall"
             />
           </div>

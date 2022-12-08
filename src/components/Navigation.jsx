@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { BrowserRouter as Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 // import { auth } from "../firebase-config";
 // import { signOut } from "firebase/auth";
+import logo from "./assets/images/smokey-logo.png"
 import About from "./About";
 import Careers from "./Careers";
 import Login from "./Login";
@@ -22,7 +23,7 @@ function Navigation() {
       <div className="top-navigation">
         <div className="top-navigation-left">
           <Link to="/">
-            <img className="logo" src="./smokey-logo.png" alt="shop-app-logo" />
+            <img className="logo" src={logo} alt="shop-app-logo" />
           </Link>
           <div className="top-navigation-links">
             <Link to="/shop">Shop</Link>
