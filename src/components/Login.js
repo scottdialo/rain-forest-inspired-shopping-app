@@ -21,11 +21,10 @@ export default function Login() {
           state: "Hello World!",
         });
       })
-      .catch((err) => {
-        // eslint-disable-next-line
-        const errorCode = err.code;
-        // eslint-disable-next-line
-        const errorMessage = err.message;
+      .catch((error) => {
+        console.log(error.code);
+
+        console.log(error.message);
       });
   };
 

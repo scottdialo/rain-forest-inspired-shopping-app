@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { auth } from "../firebase-config";
-import { signOut } from "firebase/auth";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
+// import { auth } from "../firebase-config";
+// import { signOut } from "firebase/auth";
 import About from "./About";
 import Careers from "./Careers";
 import Login from "./Login";
@@ -12,10 +12,9 @@ import Shop from "./Shop";
 import SinglepageProduct from "./SinglepageProduct";
 
 //logout function
-// eslint-disable-next-line
-const logout = async () => {
-  await signOut(auth);
-};
+// const logout = async () => {
+//   await signOut(auth);
+// };
 
 function Navigation() {
   return (
@@ -50,16 +49,16 @@ function Navigation() {
         </div>
       </div>
       <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/shop/:id" element={<SinglepageProduct />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/orders" element={<MyOrders />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/logout" element={<Shop />} />
-          <Route path="/registration" element={<Registration />} />
-        </Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/shop/:id" element={<SinglepageProduct />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/orders" element={<MyOrders />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/logout" element={<Shop />} />
+        <Route path="/registration" element={<Registration />} />
+      </Routes>
     </div>
   );
 }

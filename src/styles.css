@@ -25,6 +25,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 2% 7%;
 }
 
 .top-navigation-left {
@@ -63,6 +64,11 @@ html {
   text-align: center;
 }
 
+.homepage-container,
+.login-container {
+  padding: 3% 10%;
+}
+
 .info-bar {
   text-align: center;
   border: 1px solid;
@@ -70,6 +76,7 @@ html {
   color: white;
   border-radius: 10px;
   padding: 10px;
+  margin: 4rem 0;
 }
 .landingpage-body {
   display: flex;
@@ -87,13 +94,17 @@ html {
   gap: 2.5rem;
 }
 .landingpage-body-left p {
-  width: 560px;
+  width: 80%;
   font-size: 18px;
   line-height: 32px;
 }
 
+.landingpage-body-right {
+  padding-left: 7%;
+}
+
 .landingpage-body-right img {
-  width: 500px;
+  width: 100%;
 }
 
 .landingpage-body-left button {
@@ -114,17 +125,18 @@ html {
 
 /* registration form styling */
 
-label {
-  display: flex;
-  justify-content: center;
+form {
+  width: 50%;
+  margin: 0 auto;
 }
-input {
+
+/* input {
   width: 25%;
   display: flex;
   margin: 0 auto;
   padding: 10px 0px;
   margin-bottom: 10px;
-}
+} */
 
 .login-title {
   display: flex;
@@ -142,46 +154,32 @@ input {
   border-style: groove;
 }
 
-.register-text {
-  text-align: center;
-}
-
 .register-title {
   display: flex;
   justify-content: center;
 }
 /* rgistration form style ends */
 
-/* style login icon */
-.jss1 {
-  display: flex;
-  margin-top: 64px;
-  align-items: center;
-  flex-direction: column;
-}
-.jss2 {
-  background-color: #f50057;
-    width: 40px;
-    height: 40px;
-    margin: 0 auto;
-    border-radius: 100%;
-    padding: 5px;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
 footer {
-  margin-top: 10px;
+  margin-top: 50px;
   align-items: center;
   display: flex;
   justify-content: space-between;
+  background-color: #eeeeee;
+  padding: 2% 7%;
+  width: 100%;
 }
 .footer-right img {
   width: 30px;
   cursor: pointer;
 }
 
+.products-container {
+  padding: 5% 10%;
+}
+
 /* product card styling start here */
+
 .card {
   position: relative;
   display: -ms-flexbox;
@@ -207,7 +205,12 @@ footer {
 }
 
 .card-img {
-  width: 350px;
+  width: 300px;
+  height: 300px;
+}
+
+.product-text {
+  color: #2aaa8a;
 }
 
 .star {
@@ -217,6 +220,7 @@ footer {
 .bg-cart {
   background-color: orange;
   color: #fff;
+  width: 40%;
 }
 
 .bg-cart:hover {
@@ -249,4 +253,91 @@ a {
   width: 35px;
   text-align: center;
   height: 35px;
+}
+
+.single-prod-container {
+  padding: 0 15%;
+}
+
+.single-img {
+  width: 70%;
+  height: 400px;
+}
+
+.product-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 450px) {
+  .info-bar {
+    margin: 3rem auto;
+    width: 80%;
+    font-size: 1rem;
+  }
+  .top-navigation {
+    flex-wrap: wrap;
+  }
+
+  .top-navigation-left {
+    flex-wrap: wrap;
+  }
+
+  .signup-btn {
+    padding: 5px 15px;
+  }
+
+  .landingpage-body-right img {
+    height: 400px;
+  }
+
+  .landingpage-body-left h1 {
+    font-size: 39px;
+  }
+
+  .landingpage-body {
+    padding: 0 5%;
+    margin: 0 auto;
+  }
+
+  .landingpage-body-right {
+    padding: 0;
+  }
+  .homepage-container,
+  .login-container {
+    padding: 3% 0;
+  }
+
+  .single-prod-container {
+    padding: 0 7%;
+  }
+
+  .top-navigation-left a,
+  .top-navigation-links,
+  .top-navigation-right {
+    margin: 10px auto;
+  }
+
+  .top-navigation-links {
+    display: flex;
+    gap: 2em;
+  }
+
+  form {
+    width: 80%;
+  }
+  .single-img {
+    width: 100%;
+    height: 327px;
+  }
+
+  .col-12 {
+    margin-bottom: 30px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
